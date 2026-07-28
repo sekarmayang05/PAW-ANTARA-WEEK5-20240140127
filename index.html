@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asisten Caption UMKM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Pertemuan 5 Â· JavaScript DOM</p>
+      <h1>Asisten Caption UMKM</h1>
+      <p>Buat rancangan caption promosi sederhana dari data produk.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel" aria-labelledby="judul-form">
+      <h2 id="judul-form">Data Produk</h2>
+      <form id="captionForm" novalidate>
+        <div class="field">
+          <label for="namaProduk">Nama produk</label>
+          <input id="namaProduk" name="namaProduk" type="text" placeholder="Contoh: Brownies Cokelat" />
+          <small class="error" id="errorNama"></small>
+        </div>
+
+        <div class="field">
+          <label for="keunggulan">Keunggulan produk</label>
+          <textarea id="keunggulan" name="keunggulan" rows="4" placeholder="Contoh: lembut, tidak terlalu manis, cocok untuk oleh-oleh"></textarea>
+          <small class="error" id="errorKeunggulan"></small>
+        </div>
+
+        <div class="field">
+          <label for="platform">Platform promosi</label>
+          <select id="platform" name="platform">
+            <option value="Instagram">Instagram</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Marketplace">Marketplace</option>
+          </select>
+        </div>
+
+        <button type="submit">Buat Caption</button>
+      </form>
+    </section>
+
+    <section class="panel result" aria-labelledby="judul-hasil">
+      <h2 id="judul-hasil">Preview Caption</h2>
+      <p id="status" class="muted">Isi form, lalu klik tombol untuk membuat caption.</p>
+      <article id="captionOutput" class="caption-card" hidden></article>
+      <button id="loadExample" class="secondary" type="button">Ambil Contoh Produk</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
