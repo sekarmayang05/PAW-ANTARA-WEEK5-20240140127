@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div>
-      <p class="eyebrow">Pertemuan 5 Â· JavaScript DOM</p>
+      <p class="eyebrow">Pertemuan 5 · JavaScript DOM</p>
       <h1>Asisten Caption UMKM</h1>
       <p>Buat rancangan caption promosi sederhana dari data produk.</p>
     </div>
@@ -48,9 +48,16 @@
       <h2 id="judul-hasil">Preview Caption</h2>
       <p id="status" class="muted">Isi form, lalu klik tombol untuk membuat caption.</p>
       <article id="captionOutput" class="caption-card" hidden></article>
-      <button id="loadExample" class="secondary" type="button">Ambil Contoh Produk</button>
+      <button id="loadExample" class="secondary" type="button">Ambil Acak dari API</button>
     </section>
   </main>
+
+  <section class="catalog-container">
+    <h2>Daftar Produk dari API Publik (DummyJSON)</h2>
+    <div id="productList" class="product-grid">
+      <p class="muted">Memuat data produk dari API...</p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
